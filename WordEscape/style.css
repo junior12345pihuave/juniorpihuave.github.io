@@ -1,0 +1,202 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Título */
+h1 {
+  font-size: 2.8em;
+  color: #00ffcc;
+  margin-bottom: 10px;
+  text-shadow: 0 0 12px #00ffcc, 0 0 24px #00ffcc55;
+}
+
+/* Créditos */
+small {
+  color: #ccc;
+  font-size: 0.85em;
+  position: fixed;
+  bottom: 10px;
+  left: 15px;
+}
+
+small a {
+  color: #00ccff;
+  text-decoration: none;
+}
+
+small a:hover {
+  text-decoration: underline;
+}
+
+/* Contenedor principal */
+#gameWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+/* Contenedor del ahorcado */
+#hangman-container {
+  max-width: 420px;
+  background: #111830;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #00ffcc55;
+  padding: 20px;
+}
+
+#hangman-svg {
+  width: 100%;
+  height: auto;
+}
+
+/* Partes del cuerpo */
+.body-part {
+  stroke: #00ffcc;
+  stroke-width: 6;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Pista */
+#hint {
+  font-size: 18px;
+  margin: 15px 0;
+  font-style: italic;
+  color: #ffeb3b;
+}
+
+/* Palabra */
+#wordToGuess {
+  font-size: 2em;
+  letter-spacing: 10px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+/* Formulario */
+#guessForm {
+  background: #111830;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #00ffcc55;
+  text-align: center;
+  min-width: 180px;
+}
+
+#guessForm label {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  display: block;
+}
+
+#letterInput {
+  padding: 10px;
+  font-size: 18px;
+  width: 60px;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  background-color: #0f0f1a;
+  color: #ffffff;
+}
+
+button[type="submit"] {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  background-color: #00ffcc;
+  color: #1a1a2e;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00ffcc80;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #00e6b8;
+  box-shadow: 0 0 15px #00e6b899;
+}
+
+/* Menú final */
+#endMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 20, 30, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+#endMenu.hidden {
+  display: none;
+}
+
+.menu-content {
+  background: #111830;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 20px #00ffccaa;
+}
+
+.menu-content h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+#restartBtn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  background-color: #00ffcc;
+  color: #1a1a2e;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00ffcc80;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+#restartBtn:hover {
+  background-color: #00e6b8;
+  box-shadow: 0 0 15px #00e6b899;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  #gameWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #guessForm {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 300px;
+  }
+}

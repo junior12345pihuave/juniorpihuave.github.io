@@ -1,0 +1,40 @@
+<!-- License: MIT - Original by Waptoon (2024), modified by Junior (2025) -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>❌TicFlip ⭕</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>❌Tic Flip⭕</h1>
+    <footer class="credit">
+      by <a href="https://github.com/Waptoon" target="_blank">@Waptoon</a>
+    </footer>
+
+    <div id="statusMessage">Turno del jugador X</div>
+
+    <div class="grid" id="grid">
+      <div class="cell" onclick="cellClicked(0)"></div>
+      <div class="cell" onclick="cellClicked(1)"></div>
+      <div class="cell" onclick="cellClicked(2)"></div>
+      <div class="cell" onclick="cellClicked(3)"></div>
+      <div class="cell" onclick="cellClicked(4)"></div>
+      <div class="cell" onclick="cellClicked(5)"></div>
+      <div class="cell" onclick="cellClicked(6)"></div>
+      <div class="cell" onclick="cellClicked(7)"></div>
+      <div class="cell" onclick="cellClicked(8)"></div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <p id="modalText"></p>
+        <button class="button" onclick="resetGame()">Cerrar</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

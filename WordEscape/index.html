@@ -1,0 +1,114 @@
+<!-- License: MIT - Original by Waptoon (2024), modified by Junior (2025) -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>💀WordEscape</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>💀Word Escape</h1>
+
+    <div id="gameWrapper">
+      <!-- Contenedor del ahorcado -->
+      <div id="hangman-container">
+        <svg id="hangman-svg" viewBox="0 0 400 400">
+          <!-- Base -->
+          <line
+            x1="50"
+            y1="350"
+            x2="350"
+            y2="350"
+            stroke="#000"
+            stroke-width="5"
+          />
+          <line
+            x1="150"
+            y1="350"
+            x2="150"
+            y2="50"
+            stroke="#000"
+            stroke-width="5"
+          />
+          <line
+            x1="150"
+            y1="50"
+            x2="250"
+            y2="50"
+            stroke="#000"
+            stroke-width="5"
+          />
+          <line
+            x1="250"
+            y1="50"
+            x2="250"
+            y2="100"
+            stroke="#000"
+            stroke-width="5"
+          />
+
+          <!-- Cuerpo -->
+          <circle cx="250" cy="140" r="40" class="body-part head" />
+          <line x1="250" y1="180" x2="250" y2="280" class="body-part body" />
+          <line
+            x1="250"
+            y1="200"
+            x2="210"
+            y2="240"
+            class="body-part left-arm"
+          />
+          <line
+            x1="250"
+            y1="200"
+            x2="290"
+            y2="240"
+            class="body-part right-arm"
+          />
+          <line
+            x1="250"
+            y1="280"
+            x2="210"
+            y2="320"
+            class="body-part left-leg"
+          />
+          <line
+            x1="250"
+            y1="280"
+            x2="290"
+            y2="320"
+            class="body-part right-leg"
+          />
+        </svg>
+      </div>
+
+      <!-- Formulario -->
+      <form id="guessForm">
+        <label for="letterInput">Adivina una letra:</label>
+        <input type="text" id="letterInput" maxlength="1" required />
+        <br />
+        <button type="submit">Adivinar</button>
+      </form>
+    </div>
+
+    <!-- Pista y palabra -->
+    <div id="hint"></div>
+    <div id="wordToGuess"></div>
+
+    <!-- Menú final -->
+    <div id="endMenu" class="hidden">
+      <div class="menu-content">
+        <h2 id="endMessage"></h2>
+        <p id="finalWord"></p>
+        <button id="restartBtn">Reiniciar</button>
+      </div>
+    </div>
+
+    <!-- Créditos -->
+    <small>
+      by <a href="https://github.com/Waptoon" target="_blank">@Waptoon</a>
+    </small>
+
+    <script src="script.js"></script>
+  </body>
+</html>

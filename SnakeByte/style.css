@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo y tipografía general */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(120deg, #1a1a2e, #16213e);
+  color: #ffffff;
+  min-height: 100vh;
+  text-align: center;
+  position: relative;
+  padding: 40px 20px;
+  overflow: hidden;
+}
+
+/* Título */
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc;
+  margin-bottom: 20px;
+}
+
+/* Contenedor del canvas centrado */
+.canvas-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* Estilo del canvas */
+canvas {
+  background-color: #0f0f1a;
+  border-radius: 12px;
+  border: 3px solid #00ffcc;
+  box-shadow: 0 0 15px 4px #00ffccaa, inset 0 0 15px 2px #00ffaa88;
+  image-rendering: pixelated;
+  width: 400px;
+  height: 400px;
+}
+
+/* Caja de información */
+.score-box {
+  position: absolute;
+  top: 119px;
+  right: 190px;
+  background: #1e1e2f;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00ffc880;
+  font-size: 1.2rem;
+  min-width: 180px;
+}
+
+.score-box span {
+  color: #00ffc8;
+  font-weight: bold;
+}
+
+/* Modal de game over */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: #1f1f2e;
+  color: #fff;
+  padding: 30px 40px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00ffc8;
+}
+
+.modal-content h2 {
+  margin-bottom: 15px;
+}
+
+.modal-content p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.modal-content button {
+  background: #00ffc8;
+  color: #1f1f2e;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.modal-content button:hover {
+  background: #00dab0;
+}
+
+/* Créditos */
+.credit {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+.credit a {
+  color: #00ccff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.credit a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Ocultar modal */
+.hidden {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  canvas {
+    width: 300px;
+    height: 300px;
+  }
+
+  .score-box {
+    position: static;
+    margin: 20px auto 0;
+  }
+}

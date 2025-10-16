@@ -1,0 +1,44 @@
+<!-- License: MIT - Original by Waptoon (2024), modified by Junior (2025) -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🐍SnakeGame</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>
+      <span class="emoji">🐍</span><span class="title-text">Snake Game</span>
+    </h1>
+
+    <div class="game-container">
+      <div class="canvas-wrapper">
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+      </div>
+
+      <div class="score-box">
+        <p>Puntos: <span id="currentScore">0</span></p>
+        <p>Récord: <span id="highScore">0</span></p>
+        <p>Tiempo: <span id="timeSurvived">00:00</span></p>
+        <p id="newRecordMessage" class="hidden">🎉 ¡Nuevo récord! 🎉</p>
+      </div>
+    </div>
+
+    <!-- Modal de Game Over -->
+    <div id="gameOverModal" class="modal hidden">
+      <div class="modal-content">
+        <h2>Perdiste</h2>
+        <p id="finalScore">Tus puntos fueron: 0</p>
+        <p id="finalTime">Sobreviviste: 00:00</p>
+        <button onclick="restartGame()">Reiniciar</button>
+      </div>
+    </div>
+
+    <small class="credit">
+      by <a href="https://github.com/Waptoon" target="_blank">@Waptoon</a>
+    </small>
+
+    <script src="script.js"></script>
+  </body>
+</html>
