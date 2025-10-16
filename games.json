@@ -1,62 +1,62 @@
 [
-    {
-        "title": "Snake Byte",
-        "thumbnail": "games/SnakeByte/snakeByte.png",
-        "path": "games/SnakeByte/index.html"
-    },
-    {
-        "title": "Block Stack",
-        "thumbnail": "games/BlockStack/BlockStack.png",
-        "path": "games/BlockStack/index.html"
-    },
-    {
-        "title": "Tic Flip",
-        "thumbnail": "games/TicFlip/TicFlip.png",
-        "path": "games/TicFlip/index.html"
-    },
-    {
-        "title": "Pixel Paddle",
-        "thumbnail": "games/PixelPaddle/PixelPaddle.png",
-        "path": "games/PixelPaddle/index.html"
-    },
-    {
-        "title": "Mind Match",
-        "thumbnail": "games/MindMatch/MindMatch.png",
-        "path": "games/MindMatch/index.html"
-    },
-    {
-        "title": "Word Escape",
-        "thumbnail": "games/WordEscape/WordEscape.png",
-        "path": "games/WordEscape/index.html"
-    },
-    {
-        "title": "Wing Jumper ",
-        "thumbnail": "games/WingJumper/WingJumper.png",
-        "path": "games/WingJumper/index.html"
-    },
-    {
-        "title": "Chomp Byte ",
-        "thumbnail": "games/ChompByte/ChompByte.png",
-        "path": "games/ChompByte/index.html"
-    },
-    {
-        "title": "Color Catcher",
-        "thumbnail": "games/ColorCatcher/ColorCatcher.png",
-        "path": "games/ColorCatcher/index.html"
-    },
-    {
+  {
+    "title": "Snake Byte",
+    "thumbnail": "SnakeByte/snakeByte.png",
+    "path": "SnakeByte/index.html"
+  },
+  {
+    "title": "Block Stack",
+    "thumbnail": "BlockStack/BlockStack.png",
+    "path": "BlockStack/index.html"
+  },
+  {
+    "title": "Tic Flip",
+    "thumbnail": "TicFlip/TicFlip.png",
+    "path": "TicFlip/index.html"
+  },
+  {
+    "title": "Pixel Paddle",
+    "thumbnail": "PixelPaddle/PixelPaddle.png",
+    "path": "PixelPaddle/index.html"
+  },
+  {
+    "title": "Mind Match",
+    "thumbnail": "MindMatch/MindMatch.png",
+    "path": "MindMatch/index.html"
+  },
+  {
+    "title": "Word Escape",
+    "thumbnail": "WordEscape/WordEscape.png",
+    "path": "WordEscape/index.html"
+  },
+  {
+    "title": "Wing Jumper",
+    "thumbnail": "WingJumper/WingJumper.png",
+    "path": "WingJumper/index.html"
+  },
+  {
+    "title": "Chomp Byte",
+    "thumbnail": "ChompByte/ChompByte.png",
+    "path": "ChompByte/index.html"
+  },
+  {
+    "title": "Color Catcher",
+    "thumbnail": "ColorCatcher/ColorCatcher.png",
+    "path": "ColorCatcher/index.html"
+  },
+  {
     "title": "Pixel Blaster",
-    "thumbnail": "games/PixelBlaster/PixelBlaster.png",
-    "path": "games/PixelBlaster/index.html"
-},
-    {
+    "thumbnail": "PixelBlaster/PixelBlaster.png",
+    "path": "PixelBlaster/index.html"
+  },
+  {
     "title": "Neon Dodge",
-    "thumbnail": "games/NeonDodge/NeonDodge.png",
-    "path": "games/NeonDodge/index.html"
-},
-    {
+    "thumbnail": "NeonDodge/NeonDodge.png",
+    "path": "NeonDodge/index.html"
+  },
+  {
     "title": "Logic Runner",
-    "thumbnail": "games/LogicRunner/LogicRunner.png",
-    "path": "games/LogicRunner/index.html"
-}                                                           
+    "thumbnail": "LogicRunner/LogicRunner.png",
+    "path": "LogicRunner/index.html"
+  }
 ]
