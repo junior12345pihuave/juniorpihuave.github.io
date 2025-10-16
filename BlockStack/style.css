@@ -1,0 +1,161 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden; /* Evita el scroll vertical */
+}
+
+/* Estilo general del body */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(120deg, #1a1a2e, #16213e);
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Título del juego */
+h1 {
+  font-size: 2.5em;
+  color: #00ffcc;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px #00ffcc;
+}
+
+/* Autor fijo abajo a la izquierda */
+.credit {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  font-size: 14px;
+  color: #bbb;
+  z-index: 1000;
+}
+
+.credit a {
+  color: #00ccff;
+  text-decoration: none;
+}
+
+.credit a:hover {
+  text-decoration: underline;
+}
+
+/* Contenedor principal en columna */
+.game-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Canvas centrado con estilo profesional */
+canvas {
+  border: 3px solid #00ffcc;
+  border-radius: 12px;
+  background-color: #0f0f1a;
+  box-shadow: 0 0 15px 4px #00ffccaa, inset 0 0 15px 2px #00ffaa88;
+  image-rendering: pixelated;
+  width: 280px;
+  height: 480px;
+  display: block;
+}
+
+/* Panel de puntuación flotando a la derecha */
+.score-panel {
+  position: absolute;
+  top: 0;
+  right: -220px;
+  background-color: #111830;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00ffcc55;
+  color: #ffffff;
+  width: 180px;
+  text-align: left;
+}
+
+.score-panel h2 {
+  margin-bottom: 10px;
+  color: #00ffcc;
+  text-shadow: 0 0 8px #00ffccaa;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 700px) {
+  .score-panel {
+    position: static;
+    margin-top: 20px;
+    width: 90vw;
+    text-align: center;
+  }
+
+  .game-container {
+    flex-direction: column;
+  }
+
+  canvas {
+    width: 90vw;
+    height: auto;
+  }
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: #1f1f2e;
+  color: #fff;
+  padding: 30px 40px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00ffc8;
+}
+
+.modal-content h2 {
+  margin-bottom: 15px;
+}
+
+.modal-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.modal-content button {
+  background: #00ffc8;
+  color: #1f1f2e;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.modal-content button:hover {
+  background: #00dab0;
+}
+
+.hidden {
+  display: none;
+}

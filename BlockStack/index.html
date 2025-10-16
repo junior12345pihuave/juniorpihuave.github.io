@@ -1,0 +1,38 @@
+<!-- License: MIT - Original by Waptoon (2024), modified by Junior (2025) -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎮BlockStack</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>🧱Block Stack</h1>
+
+    <footer class="credit">
+      by <a href="https://github.com/Waptoon" target="_blank">@Waptoon</a>
+    </footer>
+
+    <div class="game-container">
+      <canvas id="gameCanvas" width="300" height="600"></canvas>
+
+      <div class="score-panel">
+        <h2>Puntuación</h2>
+        <p><strong>Puntos:</strong> <span id="score">0</span></p>
+        <p><strong>Líneas:</strong> <span id="lines">0</span></p>
+      </div>
+    </div>
+
+    <!-- Modal de fin de juego -->
+    <div id="gameOverModal" class="modal hidden">
+      <div class="modal-content">
+        <h2>🎮 Perdiste</h2>
+        <p>Tu puntaje: <span id="finalScore">0</span></p>
+        <button id="restartBtn">Reiniciar</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

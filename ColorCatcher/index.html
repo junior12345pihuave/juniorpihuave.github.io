@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Catcher</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hud">
+      <h1>🎨 Color Catcher</h1>
+      <p id="scoreBoard">Puntaje: <span id="score">0</span></p>
+    </div>
+
+    <div class="game-container">
+      <canvas id="gameCanvas"></canvas>
+    </div>
+
+    <!-- Menú Game Over -->
+    <div id="gameOverMenu" class="hidden">
+      <div class="menu-box">
+        <h2 id="endMessage">¡Perdiste!</h2>
+        <p id="finalScore">Puntaje final: 0</p>
+        <button id="restartBtn">Reiniciar</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

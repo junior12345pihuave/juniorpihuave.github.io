@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>⚡ Logic Runner ⚡</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- MENU PRINCIPAL -->
+    <div id="menu" class="menu">
+      <h1>⚡ Logic Runner ⚡</h1>
+      <button id="startBtn">Comenzar</button>
+    </div>
+
+    <!-- HUD DEL JUEGO -->
+    <div id="hud" class="hud hidden">
+      <span id="levelDisplay">Nivel: 1</span>
+      <span id="timerDisplay">Tiempo: 0s</span>
+      <button id="menuBtn">🏠 Menú</button>
+    </div>
+
+    <canvas id="gameCanvas" width="600" height="400"></canvas>
+
+    <!-- OVERLAYS -->
+    <div id="levelComplete" class="overlay">
+      <h2>🎉 ¡Nivel Completado!</h2>
+      <button id="nextLevelBtn">Siguiente Nivel</button>
+    </div>
+
+    <div id="gameOver" class="overlay">
+      <h2>💀 Has Perdido</h2>
+      <button id="retryBtn">Reintentar</button>
+    </div>
+
+    <!-- SONIDOS -->
+    <audio id="winSound" src="sonidos/win.mp3"></audio>
+    <audio id="loseSound" src="sonidos/draw.mp3"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
