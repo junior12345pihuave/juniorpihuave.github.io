@@ -1,0 +1,44 @@
+<!-- License: MIT - Original by Waptoon (2024), modified by Junior (2025) -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🧠MindMatch</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>🧠Mind Match</h1>
+    </header>
+
+    <div class="controls">
+      <div id="status" class="status" aria-live="polite"></div>
+    </div>
+
+    <main id="gameBoard" aria-label="Tablero del juego" role="grid"></main>
+
+    <!-- Overlay de victoria -->
+    <div
+      id="winOverlay"
+      class="overlay"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="winTitle"
+    >
+      <div class="modal">
+        <h2 id="winTitle">¡Lo lograste! 🎉</h2>
+        <p>Has encontrado todas las parejas. ¿Jugamos otra vez?</p>
+        <button id="newGameBtn" class="btn">🎮 Nueva partida</button>
+      </div>
+    </div>
+
+    <footer class="credits">
+      <small>
+        by <a href="https://github.com/Waptoon" target="_blank">@Waptoon</a>
+      </small>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
